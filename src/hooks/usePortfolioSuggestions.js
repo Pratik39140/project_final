@@ -19,7 +19,7 @@ export const usePortfolioSuggestions = () => {
       const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          "Authorization": "Bearer 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",
+          "Authorization": `Bearer ${process.env.API_KEY}`,
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
