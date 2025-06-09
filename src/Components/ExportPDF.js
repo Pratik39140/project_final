@@ -54,14 +54,14 @@ export default function ExportPDF({ data, suggestions }) {
 
     doc.save("portfolio.pdf");
   };
-
   return (
     <div className="text-right">
       <button
         onClick={handleExportPDF}
-        className="mb-2 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700"
+        className="mb-4 bg-[#4B5EAA] text-white px-6 py-3 rounded-lg hover:bg-[#4B5EAA]/90 font-medium flex items-center gap-2 ml-auto transition-all duration-200 shadow-sm hover:shadow focus:ring-2 focus:ring-[#D4A017] focus:ring-offset-2 dark:focus:ring-offset-slate-800"
       >
-        📄 Export PDF
+        <span className="text-[#D4A017]">📄</span>
+        Export Portfolio Report
       </button>
     </div>
   );
